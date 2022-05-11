@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Lista de Tarefas</title>
+        <meta charset="utf-8">
+        <style src="style.css"></style>
+    </head>
+    <body>
+        <h1>Lista de tarefas</h1>
+
+        <form>
+            <input id="inputTarefa" type="text" placeholder="Digite aqui a tarefa">
+            <button onclick="adicionarTarefa()" type="button">Adicionar</button>
+            <button onclick="buscar()" type="button">Busca</button>
+        </form>
+
+        <h2>Tarefas adicionadas</h2>
+        <button onclick="limparFiltro()">Limpar filtro</button>
+
+        <div id="lista"></div>
+
+        <script src="script.js "></script>
+    </body>
+</html>

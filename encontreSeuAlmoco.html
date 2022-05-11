@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Encontre Seu almoço</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Encontre seu almoço</h1>
+    <form>
+        <input id="inputDescricao" type="text" placeholder="Digite aqui a descrição do prato">
+        <input id="inputValor" type="number" placeholder="Digite aqui o valor do prato">
+        <input id="inputURL" type="text" placeholder="Digite aqui a url da imagem do prato">
+        <input id="inputEntregaGratis" type="checkbox">
+        <label for="inputEntregaGratis">Apenas entrega grátis</label>
+
+        <button onclick="cadastrar()" type="button">Adicionar</button>
+
+        <input type="text" id="campoBusca" placeholder="Digite aqui sua busca">
+        <input type="checkbox" id="filtroEntregaGratis">
+        <label for="filtroEntregaGratis">Apenas entrega grátis</label>
+
+        <input type="number" id="teto" placeholder="Digite aqui o valor máximo">
+
+        <button onclick="filtrar()" type="button">Filtrar</button>
+        <button onclick="limparPratos()" type="button">Limpar filtros</button>
+
+    </form>
+    <section id="lista"></section>
+    <script src="scriptAlmoco.js">
+
+    </script>
+</body>
+
+</html>
